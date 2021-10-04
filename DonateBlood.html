@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Management System</title>
+    <!-- <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery.min.js"></script>   
+    <script src="popper.min.js"></script> -->
+    <link rel="stylesheet" href="newlinks/bootstrap.min.css">
+    <script src="newlinks/jquery.min.js"></script>
+    <script src="newlinks/popper.min.js"></script>
+    <script src="newlinks/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="newlinks/sticky-footer.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .jumbotron {
+        height: 170px;
+    }
+
+    nav {
+        position: relative;
+        bottom: 31px;
+    }
+
+    @media (min-width:100px) and (max-width:575px) {
+        .setC {
+            padding: 10px;
+            margin-top: -10%;
+        }
+    }
+
+    @media (min-width:100px) and (max-width:679px) {
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    /* @media (min-width:100px) and (max-width:575px) {
+        .navbar {
+            display: none;
+        }
+    } */
+</style>
+
+<body>
+    <!-- Section-1 started-->
+    <div class="jumbotron jumbotron-fluid text-center text-white bg-danger ">
+        <h1>Blood Donation Management System</h1>
+        <p class="mt-3"></p>"Give blood and keep the world beating."</p>
+    </div>
+    <!-- Section-1 ended-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="DonateBlood.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="FindBlood.html">Find Blood</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Blood Groups.html">Blood Groups</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Aboutus.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section-2 started -->
+
+    <!-- Section-3 ended -->
+    <div class="container-fluid px-3">
+        <div class="row">
+            <div class="col-sm-5">
+                <!-- form details started -->
+                <div class="card mb-3">
+                    <div class="card-header text-center bg-danger text-white">
+                        <h5>Donate blood and be the reason of smile to many faces</h5>
+                    </div>
+                    <div class="card-body">
+                        <form action="ThankYou.html" method="get" name="myForm" onsubmit="return Reg()" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                    name="name" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="age">Age:</label>
+                                <input type="number" class="form-control" id="age" placeholder="Enter your age"
+                                    name="age" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please enter your age between 18 to 65.</div>
+                            </div>
+
+                            <script>
+                                function Reg(){
+                                    var age=document.myForm.age.value;
+                                    if (age>17 & age<65){
+                                        return true;
+                                    }
+                                    else{
+                                        // alert("Please enter your age between 18 to 65.");
+                                        return false;
+                                    }
+                                }
+                            </script>
+
+                            <div class="form-group">
+                                <label for="selb">Blood Group</label>
+                                <select class="form-control" name="selb" id="selb">
+                                    <option>Choose Blood Group</option>
+                                    <option>A+</option>
+                                    <option>A-</option>
+                                    <option>B+</option>
+                                    <option>B-</option>
+                                    <option>AB+</option>
+                                    <option>AB-</option>
+                                    <option>O+</option>
+                                    <option>O-</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-check-inline">
+                                    <label class="form-check-label" for="radio1">Gender
+                                        <input type="radio" class="form-check-input" id="radio1" name="optradio"
+                                            value="Male" checked>Male
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label" for="radio2">
+                                        <input type="radio" class="form-check-input" id="radio2" name="optradio"
+                                            value="Female">Female
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" id="radio3" name="optradio"
+                                            value="Others">Others
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email address:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                    name="email" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please enter your email id.</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="number">Contact Number:</label>
+                                <input type="text" class="form-control" id="number" name="number"
+                                    placeholder="Enter your contact number" pattern="[7-9]{1}[0-9]{9}"
+                                    title="Phone number with 7-9 and remaing 9 digit with 0-9">
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please enter your contact number.</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="number">Alternate Contact Number:</label>
+                                <input type="text" class="form-control" id="number" name="number"
+                                    placeholder="Enter your alternate contact number" pattern="[7-9]{1}[0-9]{9}"
+                                    title="Phone number with 7-9 and remaing 9 digit with 0-9">
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please enter your contact number.</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="place">Place:</label>
+                                <input type="text" class="form-control" id="place" placeholder="Where are you from?"
+                                    name="place" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please tell us where are you from?</div>
+                            </div>
+
+                            <div class="buttons text-center">
+                                <button type="submit" onsubmit="Reg()" class="btn btn-danger text-white mr-3">Submit</button>
+                                <button type="reset" class="btn btn-danger text-white ml-3">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                // Disable form submissions if there are invalid fields
+                (function () {
+                    'use strict';
+                    window.addEventListener('load', function () {
+                        // Get the forms we want to add validation styles to
+                        var forms = document.getElementsByClassName('needs-validation');
+                        // Loop over them and prevent submission
+                        var validation = Array.prototype.filter.call(forms, function (form) {
+                            form.addEventListener('submit', function (event) {
+                                if (form.checkValidity() === false) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                        });
+                    }, false);
+                })();
+            </script>
+
+            <div class="col-sm-7">
+                <!-- Why do we? and Health issues started -->
+                <div class="card">
+                    <div class="card-header bg-danger text-white">
+                        <h5>Why should I donate blood?</h5>
+                    </div>
+                    <div class="card-body">
+                        <li>Approximately 1000 donors are needed monthly to support the needs of our patients.</li>
+                        <li>About 400 donors per month must be from specialized processes, such as donating platelets to
+                            meet the requests of oncology patients.
+                        </li>
+                        <li>Every month 500 people have to be first-time donors to cover those who couldn’t donate in
+                            the
+                            previous period.
+                        </li>
+                        <li>3,000 people are needed every six months to donate because of their rare blood group, such
+                            as “O
+                            Negative”.</li>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header bg-danger text-white mt-3">
+                        <h5>Remember, you should NOT give blood if:</h5>
+                    </div>
+                    <div class="card-body">
+                        <li>You’ve had some biological hazard accidents in the last year.
+                        </li>
+                        <li>You have or have had Leishmaniasis.
+                        </li>
+                        <li>You have been bitten by or had contact with kissing bugs.</li>
+                        <li>You have underlying medical conditions/diseases such as diabetes, heart problems, epilepsy,
+                            cancer, among others.
+                        </li>
+                        <li>You are pregnant, breastfeeding or have had a curettage or abortion in the last 12 months.
+                        </li>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header bg-danger text-white mt-3">
+                        <h5>Who? & How?</h5>
+                    </div>
+                    <div class="card-body">
+                        <a href="Who.html" class="text-danger">1. Who can give blood?</a> <br>
+                        <a href="How.html" class="text-danger">2. How often you can donate blood?</a>
+                    </div>
+                </div>
+                <!-- Why do we? and Health issues completed -->
+
+                <!-- Questions started -->
+
+                <!-- Questions ended -->
+            </div>
+        </div>
+        <!-- form details ended -->
+    </div>
+    <!-- Section-3 ended-->
+
+    <!-- Section-4 started-->
+    <footer class="footer text-center bg-danger">
+        <span class="text-white">&copy; BLOOD DONATION MANAGEMENT SYSTEM (2021)</span>
+    </footer>
+    <!-- Section-1 ended-->
+</body>
+
+</html>

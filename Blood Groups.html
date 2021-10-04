@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Management System</title>
+    <link rel="stylesheet" href="newlinks/bootstrap.min.css">
+    <script src="newlinks/jquery.min.js"></script>
+    <script src="newlinks/popper.min.js"></script>
+    <script src="newlinks/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="newlinks/sticky-footer.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .jumbotron {
+        height: 170px;
+    }
+
+    nav {
+        position: relative;
+        bottom: 31px;
+    }
+    /* .ap{
+        margin-top: 26px;
+    }
+    .an{
+        margin-top: 110px;
+    }
+    .bp{
+        margin-top: 91px;
+    } */
+
+    @media (min-width:100px) and (max-width:575px) {
+        .setC {
+            padding: 10px;
+            margin-top: -10%;
+        }
+    }
+
+    @media (min-width:100px) and (max-width:679px) {
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    /* @media (min-width:100px) and (max-width:575px) {
+        .navbar {
+            display: none;
+        }
+    } */
+</style>
+
+<body>
+    <!-- Section-1 started-->
+    <div class="jumbotron jumbotron-fluid text-center text-white bg-danger ">
+        <h1>Blood Donation Management System</h1>
+        <p class="mt-3"></p>"Give blood and keep the world beating."</p>
+    </div>
+    <!-- Section-1 ended-->
+
+
+    <!-- Section-2 started -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="DonateBlood.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="FindBlood.html">Find Blood</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Blood Groups.html">Blood Groups</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Aboutus.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section-2 ended -->
+
+    <!-- Section-3 started -->
+    <div class="container-fluid px-3">
+        <div class="row">
+            <div class="col-sm-6">
+                <!-- A+ card started -->
+                <div class="card mb-3 ap">
+                    <div class="card-header bg-danger text-white text-center">
+                        <h4>A+</h4>
+                        <h6>&#8220; A + is the second most common blood type &#8221;</h6>
+                    </div>
+                    <div class="card-body">
+                        <li>Donors are encouraged to give whole blood, platelets and plasma.</li>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>FROM A TO AB</u></b>
+                            <li>A+ can give red blood cells to other A+ and AB+ recipients.</li>
+                        </div>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>A POSITIVE RECEIVER</u></b>
+                            <li>Those with A+ can only receive red blood cells from A+, A-, O+, O- blood types.</li>
+                        </div>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>POPULAR POSITIVITY</u></b>
+                            <li>A+ is found in 34% of people, making it the second most common blood type behind O+.
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <!-- A+ card ended -->
+
+                <!-- A- card started -->
+                <div class="card mb-3 an">
+                    <div class="card-header bg-danger text-white text-center">
+                        <h4>A-</h4>
+                        <h6>&#8220; A- is a powerful blood type &#8221;</h6>
+                    </div>
+                    <div class="card-body">
+                        <li>Donors are encouraged to give red blood cells, whole blood or platelets.</li>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>FROM A TO AB</u></b>
+                            <li>A- can give red blood cells to other A- as well as A+,A-, AB+ and AB- recipients.</li>
+                        </div>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>THE RIGHT TYPE OF GIVER</u></b>
+                            <li>Those with A- can only receive red blood cells from A- or O- blood types.</li>
+                        </div>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>A SPECIAL DONOR</u></b>
+                            <li>A- is only found in 6% of people, so donations are always needed.</li>
+                        </div>
+                    </div>
+                </div>
+                <!-- A- card ended -->
+
+                <!-- B+ card started -->
+                <div class="card mb-3 bp">
+                    <div class="card-header bg-danger text-white text-center">
+                        <h4>B+</h4>
+                        <h6>&#8220; B+ is a community supporter &#8221;</h6>
+                    </div>
+                    <div class="card-body">
+                        <li>Donors are encouraged to give red blood cells, whole blood or platelets.</li>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>LIFESAVING POSITIVES</u></b>
+                            <li>B+can give red blood cells to other B+ and AB+ recipients.</li>
+                        </div>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>POSITIVE RECEIVER</u></b>
+                            <li>Those with B+ can only receive red blood cells from B+,B-, O+.O- blood types.</li>
+                        </div>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>THE POWER OF POSITIVITY</u></b>
+                            <li>Since various types of B+ donations are useful, donations are important.
+                                Only 8% of the population has B+ blood
+                                .</li>
+                        </div>
+                    </div>
+                </div>
+                <!-- B+ card ended -->
+
+                <!-- B- card started -->
+                <div class="card mb-3">
+                    <div class="card-header bg-danger text-white text-center">
+                        <h4>B-</h4>
+                        <h6>&#8220; B- is an uncommon blood type &#8221;</h6>
+                    </div>
+                    <div class="card-body">
+                        <li>Donors are encouraged to give red blood cells, whole blood or platelets.</li>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>EVERYTHING FROM A TO B</u></b>
+                            <li>B- can give red blood cells to other B+,B-,AB+ and AB-.</li>
+                        </div>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>THE RIGHT TYPE OF GIVER</u></b>
+                            <li>Those with B- can only receive red blood cells from B- or O- blood types.</li>
+                        </div>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>A VITAL BLOOD TYPE</u></b>
+                            <li>B- is only found in less than 2% of the population, making it an incredibly important blood type to have on the shelves.</li>
+                        </div>
+                    </div>
+                </div>
+                <!-- B- card ended -->
+            </div>
+            <div class="col-sm-6">
+                <!-- AB+ card started -->
+                <div class="card mb-3">
+                    <div class="card-header bg-danger text-white text-center">
+                        <h4>AB+</h4>
+                        <h6>&#8220; AB+ is the universal recipient &#8221;</h6>
+                    </div>
+                    <div class="card-body">
+                        <li>Donors are encouraged to give platelets and plasma, although whole blood donations are always welcome.</li>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>FROM ONE TO ANOTHER</u></b>
+                            <li>AB+ can only give red blood cells to other AB+  blood types.</li>
+                        </div>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>THE UNIVERSAL RECEIVER</u></b>
+                            <li>Those with AB+ can receive red blood cells from all blood types. Type AB donors can donate plasma and platelets to all blood types.</li>
+                        </div>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>THE POWER OF POSITIVITY</u></b>
+                            <li>AB+ is only found in 3% of the population, so donations are incredibly important for patients in need of plasma.</li>
+                        </div>
+                    </div>
+                </div>
+                <!-- AB+ card ended -->
+
+                <!-- AB- card started -->
+                <div class="card mb-3">
+                    <div class="card-header bg-danger text-white text-center">
+                        <h4>AB-</h4>
+                        <h6>&#8220; AB- is the rarest blood type &#8221;</h6>
+                    </div>
+                    <div class="card-body">
+                        <li>Donors are encouraged to give platelets and/or plasma, but whole blood donations are always welcome.</li>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>FROM ONE AB TO ANOTHER; UNIVERSAL PLASMA DONOR</u></b>
+                            <li>AB- can give red blood cells to both AB- and AB+ blood types. AB- can give platelets or plasma to a patient of any blood type.</li>
+                        </div>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>MAKING NEGATIVE A POSITIVE</u></b>
+                            <li>Those with AB- can receive red blood cells from all negative blood types.</li>
+                        </div>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>DONATIONS ARE VITAL</u></b>
+                            <li>AB- is only found in less than 1% of the population, making it the most rare and highly in-demand blood type. AB is the most desirable blood type for platelet and plasma donations.</li>
+                        </div>
+                    </div>
+                </div>
+                <!-- AB- card ended -->
+
+                <!-- O+ card started -->
+                <div class="card mb-3">
+                    <div class="card-header bg-danger text-white text-center">
+                        <h4>O+</h4>
+                        <h6>&#8220; O+ is the most common blood type &#8221;</h6>
+                    </div>
+                    <div class="card-body">
+                        <li>Donors are encouraged to give red blood cells and whole blood donations.</li>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>THE POWER OF POSITIVITY</u></b>
+                            <li>O+ can give red blood cells to other Rh positive blood types.</li>
+                        </div>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>POSITIVES AND NEGATIVES</u></b>
+                            <li>Those with O+ can only receive red blood cells from O+ or O- donors.</li>
+                        </div>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>POPULAR POSITIVITY</u></b>
+                            <li>O+ is found in 38% of people, making it the most common blood type.</li>
+                        </div>
+                    </div>
+                </div>
+                <!-- O+ card ended -->
+
+                <!-- O- card started -->
+                <div class="card mb-3">
+                    <div class="card-header bg-danger text-white text-center">
+                        <h4>O-</h4>
+                        <h6>&#8220; O-  is the highest in-demand blood type &#8221;</h6>
+                    </div>
+                    <div class="card-body">
+                        <li>Donors are encouraged to give red cells and whole blood donations.</li>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>GIVE NOT TAKERS</u></b>
+                            <li>Those with O- can only receive from other O- donors.</li>
+                        </div>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>THE UNIVERSAL DONOR</u></b>
+                            <li>O- blood type is the universal red blood cell donor because their red blood cells can be transfused  into any patient, regardless of blood type. O- red cells are used for trauma situations and other emergencies when the patient’s blood type is not known. O- red cells are also frequently used for babies and sickle cell anemia patients.</li>
+                        </div>
+                        <div class="mt-2">
+                            <b class="text-danger"><u>ALWAYS IN DEMAND</u></b>
+                            <li>O- makes up only 6.6% of the population, found in just 1 of every 15 people.</li>
+                        </div>
+                    </div>
+                </div>
+                <!-- O- card ended -->
+            </div>
+        </div>
+    </div>
+    <!-- Section-3 ended-->
+
+    <!-- Section-4 started-->
+    <footer class="footer text-center bg-danger">
+        <span class="text-white">&copy; BLOOD DONATION MANAGEMENT SYSTEM (2021)</span>
+    </footer>
+    <!-- Section-1 ended-->
+</body>
+
+</html>
